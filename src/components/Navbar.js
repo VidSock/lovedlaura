@@ -1,6 +1,6 @@
 import React from 'react'
-import SearchBox from '../components/SearchBox'
-import logo from '../img/pick6golf-logo-square.svg'
+// import SearchBox from '../components/SearchBox'
+// import logo from '../img/pick6golf-logo-square.svg'
 import Headroom from "react-headroom"
 import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 
@@ -125,15 +125,7 @@ input.navbar-link{width:80%; margin-top:5px;}
 
 
 const NavBar = ({ toggleNavbar, isActive }) => (
-  <StaticQuery
-    query={graphql`
-            query SearchIndexQuery {
-                siteSearchIndex {
-                    index
-                }
-            }
-        `}
-    render={data => (
+
 
 
 
@@ -146,10 +138,33 @@ const NavBar = ({ toggleNavbar, isActive }) => (
   
     
     <Link to="/" className="logolink" title="Logo - Back To Home">
-    <img className="logo fadeInDown" src={logo} alt="Twilightscapes Logo" />
+    {/* <img className="logo fadeInDown" src={logo} alt="Twilightscapes Logo" /> */}
+    Loved by Laura
     </Link>
     
     
+    <ul id="menu" className="menu">
+            
+            
+              
+            {/* <li className="grad" style={{position:'relative',}}>
+            <Link className="navbar-item" to="/shop" style={{paddingRight:'',}}>
+              Shop 
+            </Link>
+            </li> */}
+
+<li className="grad" style={{position:'relative',}}>
+            <Link className="navbar-item" to="/about" style={{paddingRight:'',}}>
+              About Us 
+            </Link>
+            </li>
+
+            <li className="grad" style={{position:'relative',}}>
+            <Link className="navbar-item" to="/blog" style={{paddingRight:'',}}>
+              Blog 
+            </Link>
+</li>
+            </ul>
    
    
 
@@ -199,7 +214,7 @@ const NavBar = ({ toggleNavbar, isActive }) => (
 <div className="container" style={{margin:'0', padding:'0px',}}>
     
 
-    <div className="searchbox" style={{padding:'3px 1rem 0 0',}}><SearchBox searchIndex={data.siteSearchIndex.index} /></div>
+    {/* <div className="searchbox" style={{padding:'3px 1rem 0 0',}}><SearchBox searchIndex={data.siteSearchIndex.index} /></div> */}
 
 
  </div>
@@ -224,8 +239,8 @@ const NavBar = ({ toggleNavbar, isActive }) => (
 </>
       
       
-   )}
-  />
+
+
 )
 
 export default NavBar

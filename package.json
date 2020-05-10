@@ -5,6 +5,7 @@
   "author": "Todd Lambert",
   "dependencies": {
     "@gatsby-contrib/gatsby-plugin-elasticlunr-search": "^2.3.0",
+    "@gatsbystorefront/gatsby-theme-storefront-shopify": "git+https://github.com/GatsbyStorefront/gatsby-theme-storefront-shopify.git",
     "babel-plugin-styled-components": "^1.10.6",
     "gatsby": "^2.19.18",
     "gatsby-image": "^2.0.23",

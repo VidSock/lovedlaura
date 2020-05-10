@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Helmet } from 'react-helmet'
 import Footer from '../components/Footer'
 // import Gallery1 from '../components/Gallery1'
-// import Navbar from '../components/Navbar'
+import Navbar from '../components/Navbar'
 import config from '../../config'
 // import Install from '../components/Install'
 import PopContact from '../components/PopContact'
@@ -133,7 +133,7 @@ const TemplateWrapper = ({ children }) => {
       </Helmet>
       
  
-      {/* <Navbar /> */}
+      <Navbar />
       <PopContact />
   
       <main>{children}</main>

@@ -1,5 +1,8 @@
 const config = require('./config')
 
+require('dotenv').config({ path: `.env` });
+const flattenMenu = require('@gatsbystorefront/gatsby-theme-storefront-shopify/src/utils/flattenMenu');
+
 const pathPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix
 
 const {
@@ -51,6 +54,18 @@ module.exports = {
       ]
     }
   },
+
+  {
+    resolve: '@gatsbystorefront/gatsby-theme-storefront-shopify',
+    options: {
+      shopName: process.env.GATSBY_SHOP_NAME,
+      accessToken: process.env.GATSBY_SHOPIFY_ACCESS_TOKEN,
+      basePath: '/shop',
+      shopifyLite: true, // default 'false'
+      enableWebp: true, // default 'true'
+      imageQuality: '95', // default '95', better to decrease but always check your result images quality
+    },
+  },
     
 { 
       resolve: `gatsby-plugin-purgecss`,
@@ -65,6 +80,7 @@ module.exports = {
     },
     
 
+    
   
     
     {
