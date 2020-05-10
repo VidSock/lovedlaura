@@ -4,7 +4,7 @@ import Footer from '../components/Footer'
 // import Gallery1 from '../components/Gallery1'
 import Navbar from '../components/Navbar'
 import config from '../../config'
-// import Install from '../components/Install'
+import Install from '../components/Install'
 import PopContact from '../components/PopContact'
 import 'typeface-lobster-two'
 import 'typeface-hammersmith-one'
@@ -130,6 +130,7 @@ const TemplateWrapper = ({ children }) => {
       
  
       <Navbar />
+      <Install />
       <PopContact />
   
       <main>{children}</main>

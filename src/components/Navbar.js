@@ -10,6 +10,9 @@ import { GoGear } from 'react-icons/go'
 // import { AiFillBank } from 'react-icons/ai'
 import { FaRegAddressCard, FaTelegramPlane, FaSearch, FaTimesCircle } from 'react-icons/fa'
 
+import { MdShoppingCart } from 'react-icons/md'
+
+
 // import PopContact from '../components/PopContact'
 // import ScrollAnimation from 'react-animate-on-scroll'
 import { Link, graphql, StaticQuery } from 'gatsby'
@@ -155,7 +158,7 @@ const NavBar = ({ toggleNavbar, isActive }) => (
 
 <li className="grad" style={{position:'relative',}}>
             <Link className="navbar-item" to="/about" style={{paddingRight:'',}}>
-              About Us 
+              About Laura 
             </Link>
             </li>
 
@@ -164,6 +167,20 @@ const NavBar = ({ toggleNavbar, isActive }) => (
               Blog 
             </Link>
 </li>
+
+<li className="grad" style={{position:'relative',}}>
+            <Link className="navbar-item" to="/shop/cart" style={{paddingRight:'',}}>
+            <MdShoppingCart style={{fontSize:'130%'}} />
+            </Link>
+</li>
+
+{/* <li style={{display:'',}}>
+             
+             <label className="modal-btn grad" htmlFor="semitoggle" style={{position:'relative', textShadow: '1px 2px 0px black', paddingRight:'8px',}}> <FaSearch className="contact-icon txtshadow" style={{fontSize:'23px', position:'relative', right:'', top:'10px',}}/></label> 
+             
+              </li> */}
+
+
             </ul>
    
    

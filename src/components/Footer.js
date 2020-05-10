@@ -14,34 +14,10 @@ import vimeo from '../img/social/vimeo.svg'
 
 
 
-
-{/* var masters = new Date(2020,0, 20);
-  var today = new Date();
-  if (today>= masters){
-    document.body.className += ' masters';
- }
-var pga = new Date(2020,4, 19);
-  var today = new Date();
-  if (today>= pga){
-    document.body.className += ' pga';
- }
- var usopen = new Date(2020,5, 16);
-  var today = new Date();
-  if (today>= usopen){
-    document.body.className += ' usopen';
- }
-  var theopen = new Date(2020,6, 21);
-  var today = new Date();
-  if (today>= theopen){
-    document.body.className += ' theopen';
- } */}
-
-
-
 const Footer = class extends React.Component {
   render() {
     return (
-	    <ScrollAnimation animateIn="fadeIn" duration={2} initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
+	    <ScrollAnimation animateIn="fadeIn" duration={4} initiallyVisible={false} animateOnce={false} animatePreScroll={false}>
       <footer className="footer has-background-black has-text-white-ter">
         <div className="content has-text-centered">
           
@@ -50,52 +26,24 @@ const Footer = class extends React.Component {
 
  
 
-<br />
-<h2 style={{textAlign:'center', margin:'0 0 1rem 0',}}>2020 Tournaments</h2>
-<ul className="socialmenu" style={{textAlign:'center', justifyContent:'center', margin:''}}>
-
-<li className="honda">Honda Classic<br /><br />Feb 27 -<br /> March 1<br /><br />@ PGA National</li>
 
 
-<li className="players">The Players<br /><br />March<br /> 12 - 15<br /><br />@ TPC Sawgrass</li>
+<ul className="socialmenu" style={{textAlign:'center', justifyContent:'center', margin:'3rem 0'}}>
+  <li className="socialtext"><h3>I&apos;m<br />Social</h3></li>
+<li><a className="social"  href="https://facebook.com/twilightscapes" alt="Facebook" title="Facebook"><FaFacebookSquare /><span>Facebook</span></a></li>
+<li style={{display: '',}}><a className="social" href="https://www.linkedin.com/in/toddlambert" alt="LinkIn" title="LinkedIn"><FaLinkedin /><span>LinkedIn</span></a></li>
+<li><a className="social" href="https://twitter.com/toddlambert" alt="Twitter" title="Twitter"><FaTwitterSquare /><span>Twitter</span></a></li>
+<li><a className="social" href="https://www.instagram.com/twilightscapes" alt="Instagram" title="Instagram"><FaInstagram /><span>Instagram</span></a></li>
+<li style={{display: 'none',}}><a className="social" href="https://www.pinterest.com/twilightscapes/" alt="Pinterest" title="Pinterest"><FaPinterestSquare /><span>Pinterest</span></a></li>
 
-<li className="anainpration">ANA Inspiration<br /><br />April<br /> 2 - 5<br /><br />@ Mission Hills</li>
-
-<li className="masters">The Masters<br /><br />April<br /> 9 - 12<br /><br />@ Augusta</li>
-
-
-<li className="pga">The PGA<br /><br />May<br /> 14 - 17<br /><br />@ TPC Harding Park</li>
-
-
-
-
-
-
-
-
+<li><a className="social" href="https://www.youtube.com/channel/UCccK2S9xrcLnCR3dTuUwsxQ" alt="YouTube" title="YouTube"><FaYoutubeSquare /><span>YouTube</span></a></li>
 </ul>
 
-<ul className="socialmenu" style={{textAlign:'center', justifyContent:'center', marginTop:'.5rem'}}>
-
-<li className="memorial">The Memorial<br /><br />June<br /> 4 - 7< br /><br /><br />@ Muirfield</li>
-
-<li className="usopen">The U.S. Open<br /><br />June<br /> 18 - 21<br /><br />@ Winged Foot</li>
-
-
-<li className="theopen">The Open<br /><br />July<br /> 16 - 19<br /><br />@ Royal St. George</li>
-
-<li className="senior">Senior British Open<br /><br />July<br /> 23 - 26<br /><br />@ Sunningdale</li>
-
-<li className="northern">Northern Trust<br /><br />August<br /> 13 - 16<br /><br />@ TPC Boston</li>
-</ul>
-
-<br />
-<br />
-{/* <div style={{textAlign: 'center', margin: '2rem 0 1rem 0', justifyContent: 'center', fontSize: '90%'}}><Link to="/disclaimer/">Disclaimer</Link>  |  <Link to="/privacy/">Privacy Policy</Link>  |  <Link to="/terms/">Terms of Service</Link></div> */}
+<div style={{textAlign: 'center', margin: '2rem 0 1rem 0', justifyContent: 'center', fontSize: '90%'}}><Link to="/disclaimer/">Disclaimer</Link>  |  <Link to="/privacy/">Privacy Policy</Link>  |  <Link to="/terms/">Terms of Service</Link></div>
 
 
 
-{/* <div style={{textAlign: 'center', margin: '0 0 1rem 0', justifyContent: 'center', fontSize: '70%'}}>Copyright &copy; {(new Date().getFullYear())}</div> */}
+<div style={{textAlign: 'center', margin: '0 0 1rem 0', justifyContent: 'center', fontSize: '70%'}}>Copyright &copy; {(new Date().getFullYear())} Todd Lambert</div>
         </div>
       </footer>
       </ScrollAnimation>
