@@ -132,14 +132,14 @@ const TemplateWrapper = ({ children }) => {
 
       </Helmet>
       
- 
+ <Consent />
       <Navbar />
       <Install />
+      
       <PopContact />
   
       <main>{children}</main>
 
-      <Consent />
     
 
 

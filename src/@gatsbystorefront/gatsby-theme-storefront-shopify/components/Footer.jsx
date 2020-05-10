@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import { FaFacebookSquare, FaLinkedin, FaTwitterSquare, FaInstagram, FaPinterestSquare, FaYoutubeSquare } from 'react-icons/fa'
 import ScrollAnimation from 'react-animate-on-scroll'
 
+import CookieConsent from "react-cookie-consent"
 
 /*
 import facebook from '../img/social/facebook.svg'
@@ -17,7 +18,30 @@ import vimeo from '../img/social/vimeo.svg'
 const Footer = class extends React.Component {
   render() {
     return (
-	    <ScrollAnimation animateIn="fadeIn" duration={4} initiallyVisible={false} animateOnce={false} animatePreScroll={false}>
+     <>
+      <CookieConsent
+	debug={false}
+	location="bottom"
+	style={{ background: "#222", zIndex:'100000000', padding:'10px 3% 0% 3%', opacity:'.8', }}
+	enableDeclineButton={false}
+	declineButtonText="No Cookies"
+    declineButtonStyle={{ color: "#fff", background: "#666", fontSize: "13px", }}
+    
+    buttonText="Accept"
+	buttonStyle={{ color: "#333", justifyContent:'center', textAlign:'center', background: "#eee", fontSize: "13px", fontWeight:'bold', borderRadius:'5px', padding:'.5rem 1rem', margin:'10px auto 30px auto', top:'10px',  position:'relative', }}
+
+    expires={30}
+    cookieName="Twilightscapes.com-site-pref-cookie"
+>
+
+    <div style={{ padding:'0 0 0 0', fontSize:'90%', textAlign:'center',}}> We use cookies to optimize our website.{" "}<br />
+    <span style={{ fontSize: "75%" }}>
+   <a href="/privacy/" style={{color:'#fff',}}>Do Not Sell My Personal Information</a> | <a href="/privacy/" style={{color:'#fff',}}>Privacy Policy</a>
+    </span><br /><br /></div>
+    
+</CookieConsent> 
+
+	    <ScrollAnimation animateIn="fadeIn" duration={4} initiallyVisible={false} animateOnce={false} animatePreScroll={false}> 
       <footer className="footer has-background-black has-text-white-ter">
         <div className="content has-text-centered">
           
@@ -47,6 +71,7 @@ const Footer = class extends React.Component {
         </div>
       </footer>
       </ScrollAnimation>
+      </>
     )
   }
 }

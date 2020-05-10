@@ -2,6 +2,11 @@ import React from 'react'
 // import SearchBox from '../components/SearchBox'
 // import logo from '../img/pick6golf-logo-square.svg'
 import Headroom from "react-headroom"
+
+
+import CookieConsent from "react-cookie-consent"
+
+
 import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 
 import { GoArrowUp, GoTelescope } from 'react-icons/go'
@@ -134,7 +139,28 @@ const NavBar = ({ toggleNavbar, isActive }) => (
 
 	    
     <> 
-    <CustomBox>     
+    <CustomBox>
+    <CookieConsent
+	debug={true}
+	location="bottom"
+	style={{ background: "#222", zIndex:'100000000', padding:'10px 3% 0% 3%', opacity:'.8', }}
+	enableDeclineButton={false}
+	declineButtonText="No Cookies"
+    declineButtonStyle={{ color: "#fff", background: "#666", fontSize: "13px", }}
+    
+    buttonText="Accept"
+	buttonStyle={{ color: "#333", justifyContent:'center', textAlign:'center', background: "#eee", fontSize: "13px", fontWeight:'bold', borderRadius:'5px', padding:'.5rem 1rem', margin:'10px auto 30px auto', top:'10px',  position:'relative', }}
+
+    expires={30}
+    cookieName="Twilightscapes.com-site-pref-cookie"
+>
+
+    <div style={{ padding:'0 0 0 0', fontSize:'90%', textAlign:'center',}}> We use cookies to optimize our website.{" "}<br />
+    <span style={{ fontSize: "75%" }}>
+   <a href="/privacy/" style={{color:'#fff',}}>Do Not Sell My Personal Information</a> | <a href="/privacy/" style={{color:'#fff',}}>Privacy Policy</a>
+    </span><br /><br /></div>
+    
+</CookieConsent>  
 <Headroom style={{ zIndex: '5', }}>
     <header className="header" style={{position:'relative',}}>
     
