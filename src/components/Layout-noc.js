@@ -10,7 +10,7 @@ import PopContact from '../components/PopContact'
 // import 'typeface-hammersmith-one'
 
 import "../css/index.scss"
-import Consent from '../components/Consent'
+// import Consent from '../components/Consent'
 
 // import splash from '../img/hytron-splash.png'
 
@@ -132,7 +132,7 @@ const TemplateWrapper = ({ children }) => {
 
       </Helmet>
       
- <Consent />
+ {/* <Consent /> */}
       <Navbar />
       <Install />
       

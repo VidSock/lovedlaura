@@ -6,11 +6,13 @@ import Navbar from '../components/Navbar'
 import config from '../../config'
 import Install from '../components/Install'
 import PopContact from '../components/PopContact'
-import 'typeface-lobster-two'
-import 'typeface-hammersmith-one'
+// import 'typeface-lobster-two'
+// import 'typeface-hammersmith-one'
+// import 'typeface-fredericka-the-great'
+// import 'typeface-amatic-sc'
 
 import "../css/index.scss"
-import Consent from '../components/Consent'
+// import Consent from '../components/Consent'
 
 // import splash from '../img/hytron-splash.png'
 
@@ -128,11 +130,11 @@ const TemplateWrapper = ({ children }) => {
 
       </Helmet>
       
-      <Consent />
+
       <Navbar />
 
       <Install />
-      <Consent />
+      {/* <Consent /> */}
       <PopContact />
   
       <main>{children}</main>

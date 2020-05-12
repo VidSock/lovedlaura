@@ -396,6 +396,20 @@ module.exports = {
     }
   },
 
+
+  {
+    resolve: 'gatsby-plugin-web-font-loader',
+    options: {
+      google: {
+        families: ['Kanit:ital,wght@1,900']
+      }
+    }
+  },
+
+
+
+
+
   {
     resolve: '@gatsbystorefront/gatsby-theme-storefront-shopify',
     options: {

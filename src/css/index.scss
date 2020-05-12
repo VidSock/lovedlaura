@@ -5,7 +5,7 @@
 @import url("animate.css");
 @import url("custom.css");
 
-$primary: #C82C10;
+$primary: #0d9ac5;
 $red: #ff0000;
 
 .css-1t48mbg{margin-top:0 !important;}
@@ -662,11 +662,11 @@ body.masters li.masters, body.pga li.pga, body.usopen li.usopen, body.theopen li
 
 
 
-h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header .menu-icon:before, input.special, .intro:after, .intro:before, .scrolldown, label, .font, .gatsby-image-wrapper, .full-width-image:after{font-family: Hammersmith One/*Lobster Two, font-style: italic; */}
+h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header .menu-icon:before, input.special, .intro:after, .intro:before, .scrolldown, label, .font, .gatsby-image-wrapper, .full-width-image:after{font-family:Kanit, Amatic SC, display; font-weight: bold !important;}
 
-#menu{font-size:1rem; text-transform: uppercase;}
+#menu{font-size:1.2rem;}
 
-p{line-height: 1.5rem; max-width:998px;}
+p{line-height: 1rem; max-width:998px;}
 // BASE TYPOGRAPHY
 
 textarea,
@@ -705,7 +705,7 @@ padding:0 0;
 .header ul li:first-child{margin-top:10px; }
 .header ul li:last-child{margin-bottom:0;}
 
-.header ul li a{ padding-top:20px; padding-bottom: 20px;}
+.header ul li a{ padding-top:14px; padding-bottom: 0;}
 
 .header li a {
   display: block;
@@ -755,17 +755,37 @@ padding:0 0;
 .logocolor:after, .logocolor:before, .logocolor{}
 
 
+
+
 .logolink{
-font-family:Lobster Two;
-color:#333;
-letter-spacing:1px;
-text-transform:lowercase;
-// padding-left:2rem;
-font-weight: normal;
-padding-top:4px;
+  position:relative;
+  margin-top:5px;
+  font-family: Fredericka the Great, display;
+  font-size: 28px !important;
+  font-weight: 100;
+  color: rgba(0, 0, 0, 1);
+  text-transform: uppercase;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 0.9em;
+  letter-spacing: 2.3px;
+  text-shadow: 2px 4px 10px rgba(219, 57, 57, 1) !important;
+  text-decoration: none !important;
+ }
+
+.logolink:after{
+  content:'by';
+  position:absolute;
+  margin-right:-24px;
+  margin-top:-18px;
+  font-size:14px;
+  text-transform:lowercase;
+  transform: rotate(-28deg);
 }
 
-.header .logolink{font-size:240%; text-shadow: 0px 1px 4px #ff0000;}
+
+
+// .header .logolink{font-size:240%; text-shadow: 0px 1px 4px #ff0000;}
 
 
 
@@ -785,13 +805,14 @@ padding-top:4px;
 
 
 .logotype{
-font-family:Lobster Two;;
+font-family:Kanit;
 color:$primary;
 letter-spacing:1px;
 text-transform:lowercase;
 font-weight: normal;
 position:relative;
 text-shadow: 0px 1px 0px #fff;
+text-decoration: none !important;
 }
 .logotype:before{
 	content: '.todd {';
@@ -1135,7 +1156,7 @@ body.light #blogroll{background-color:transparent !important;}
     display: block;
     padding:1rem;
     border-right:1px solid #999;
-    color:#222 !important;
+    color:#666 !important;
     text-shadow: 0px 1px 0 #fff !important;
     
   }
@@ -1214,7 +1235,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0
 }
 
 @media (min-width: 1024px) {
-#menu{font-size:1rem;}
+#menu{font-size:12px !important;}
 .header {height:60px;}
 .header ul li a{border-bottom:0px solid #444 !important;/*  padding-top:15px; padding-bottom: 10px; */}
 
@@ -1315,7 +1336,7 @@ body.dark, body.dark .container{
 
 body.light {
   background-color: #dedede;
-  color: #333; }
+  color: #666; }
 
 body.dark a {
   color: #eee }

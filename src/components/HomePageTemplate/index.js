@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
-import logo from '../../img/pick6golf-final.svg'
+import logo from '../../img/dressupchef-logo-vert.svg'
 import Install from '../Install'
 import Helmet from 'react-helmet'
 import Offerings from '../Offerings'

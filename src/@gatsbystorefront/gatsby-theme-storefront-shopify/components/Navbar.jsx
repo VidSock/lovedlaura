@@ -1,6 +1,6 @@
 import React from 'react'
 // import SearchBox from '../components/SearchBox'
-// import logo from '../img/pick6golf-logo-square.svg'
+// import logo from '/img/dressupchef-logo.svg'
 import Headroom from "react-headroom"
 
 
@@ -141,7 +141,7 @@ const NavBar = ({ toggleNavbar, isActive }) => (
     <> 
     <CustomBox>
     <CookieConsent
-	debug={true}
+	debug={false}
 	location="bottom"
 	style={{ background: "#222", zIndex:'100000000', padding:'10px 3% 0% 3%', opacity:'.8', }}
 	enableDeclineButton={false}
@@ -168,7 +168,7 @@ const NavBar = ({ toggleNavbar, isActive }) => (
     
     <Link to="/" className="logolink" title="Logo - Back To Home">
     {/* <img className="logo fadeInDown" src={logo} alt="Twilightscapes Logo" /> */}
-    Loved by Laura
+    Loves<br />Laura
     </Link>
     
     
