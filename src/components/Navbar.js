@@ -166,8 +166,8 @@ const NavBar = ({ toggleNavbar, isActive }) => (
     
   
     
-    <Link to="/" className="logolink1" title="Logo - Back To Home">
-    <img className="logo fadeInDown" src={logo} alt="Twilightscapes Logo" />
+    <Link to="/" className="logolink" title="Logo - Back To Home">
+    <img className="logo fadeInDown" src={logo} alt="Dress Up Chef Logo" />
     {/* Loves<br />Laura */}
     </Link>
     

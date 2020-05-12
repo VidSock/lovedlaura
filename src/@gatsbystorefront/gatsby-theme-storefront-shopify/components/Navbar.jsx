@@ -1,6 +1,6 @@
 import React from 'react'
 // import SearchBox from '../components/SearchBox'
-// import logo from '/img/dressupchef-logo.svg'
+import logo from '../../../img/dressupchef-logo.svg'
 import Headroom from "react-headroom"
 
 
@@ -167,8 +167,8 @@ const NavBar = ({ toggleNavbar, isActive }) => (
   
     
     <Link to="/" className="logolink" title="Logo - Back To Home">
-    {/* <img className="logo fadeInDown" src={logo} alt="Twilightscapes Logo" /> */}
-    Loves<br />Laura
+    <img className="logo fadeInDown" src={logo} alt="Dress Up Chef Logo" />
+    {/* Loves<br />Laura */}
     </Link>
     
     
