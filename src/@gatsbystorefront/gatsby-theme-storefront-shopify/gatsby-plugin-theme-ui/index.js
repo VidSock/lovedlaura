@@ -6,7 +6,7 @@ const colors = {
   text: '#000',
   background: '',
   backgroundFooter: '#f8f8f8',
-  primary: '#333',
+  // primary: '#333',
   secondary: '#77e3da',
   muted: '#e3f9f7',
   grey: '#dddddf',
@@ -86,17 +86,17 @@ export const preset = {
       letterSpacing: '0.1em',
     },
     link: {
-      color: 'primary',
+      // color: 'primary',
       textDecoration: 'none',
       ':hover,:focus,.active': {
-        color: 'primary',
+        // color: 'primary',
       },
     },
     searchLink: {
-      color: 'primary',
+      // color: 'primary',
       textDecoration: 'none',
       ':hover,:focus,.active': {
-        color: 'primary',
+        // color: 'primary',
         textDecoration: 'none',
       },
     },
@@ -113,10 +113,10 @@ export const preset = {
       boxShadow: 'card',
     },
     link: {
-      color: 'primary',
+      // color: 'primary',
       textDecoration: 'none',
       ':hover,:focus,.active': {
-        color: 'primary',
+        // color: 'primary',
       },
     },
     nav: {
