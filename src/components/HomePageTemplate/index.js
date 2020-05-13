@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
 import logo from '../../img/dressupchef-logo-vert.svg'
-import Install from '../Install'
+// import Install from '../Install'
 import Helmet from 'react-helmet'
 import Offerings from '../Offerings'
 import Testimonials from '../Testimonials'
@@ -131,7 +131,7 @@ const HomePageTemplate = ({
   
   
   </CustomBox>
-  <Install />
+  {/* <Install /> */}
 
   
   </>

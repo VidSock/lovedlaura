@@ -175,7 +175,7 @@ const NavBar = ({ toggleNavbar, isActive }) => (
 
 
             <li className="grad" style={{position:'relative',}}>
-            <Link className="navbar-item" to="/portfolio" style={{paddingRight:'',}}>
+            <Link className="navbar-item" to="/aboutus" style={{paddingRight:'',}}>
               About
             </Link>
             </li>

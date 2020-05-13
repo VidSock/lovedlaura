@@ -2,6 +2,7 @@
 import React from 'react'
 import Layout from '../components/Layout'
 // import Install from '../components/Install'
+import logo from '../img/dressupchef-icon.svg'
 import { graphql, useStaticQuery } from 'gatsby'
 import Gallery from '../components/Gallery'
 import Image from '../components/Image'
@@ -104,11 +105,16 @@ const Gal1Page = () => {
 <section className="intro about1 outer section" style={{paddingTop:'0', overflow:'hidden',}}>
 
 
-<div className="container" style={{margin:'1rem 8%',}}>
-<h3 className="" style={{textAlign:'center', fontSize:'250%',}}>
-We'd love to hear your idea!
-</h3>
-</div>
+<ScrollAnimation animateIn="bounceInDown" animateOnce="true" delay={1400} offset={0} style={{position:'relative', paddingTop:'0%', overflow:'hidden', width:'100%', display:'flex', justifyContent:'center', verticalAlign:'center', alignContent:'center', alignItems: 'center',}}>
+  
+  <div className="container innerpanel" style={{padding:'1rem', backgroundColor:'#fff', width:'50%', borderRadius:'10px', filter:'blur(0px)',}}>
+  
+     <img className="logo" src={logo} alt="Dress Up Chef Logo" style={{maxHeight:'300px'}} />
+     <h5 className="" style={{textAlign:'center', fontSize:'250%',}}>
+We want to hear it
+</h5>
+     </div>
+    </ScrollAnimation>
 
 
 
@@ -136,6 +142,9 @@ We'd love to hear your idea!
 <p>We'd be honored to help you honor the memory of your loved one.</p>
 </div>
 
+<ScrollAnimation animateIn="bounceInUp" animateOnce={true} delay={100} style={{ zIndex:'1', display:'',}}>
+    <Contact />
+    </ScrollAnimation>
 
 </section>
 
@@ -177,12 +186,11 @@ Client List
 </section>
 
 
-<br />
-<br />
+
     
 
 <div className="content outer">
-    <Contact />
+
     </div>
 
 
