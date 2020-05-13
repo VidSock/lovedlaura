@@ -33,7 +33,7 @@ const Footer = class extends React.Component {
 
 
 <ul className="socialmenu" style={{display:'flex', textAlign:'center', justifyContent:'center', margin:'3rem 0'}}>
-  <li className="socialtext"><strong>I&apos;m<br />Social</strong></li>
+  <li className="socialtext"><strong>find us<br />online</strong></li>
 <li><a className="social"  href="https://facebook.com/twilightscapes" alt="Facebook" title="Facebook"><FaFacebookSquare /><span>Facebook</span></a></li>
 <li style={{display: '',}}><a className="social" href="https://www.linkedin.com/in/toddlambert" alt="LinkIn" title="LinkedIn"><FaLinkedin /><span>LinkedIn</span></a></li>
 <li><a className="social" href="https://twitter.com/toddlambert" alt="Twitter" title="Twitter"><FaTwitterSquare /><span>Twitter</span></a></li>
@@ -47,7 +47,7 @@ const Footer = class extends React.Component {
 
 
 
-<div style={{textAlign: 'center', margin: '0 0 1rem 0', justifyContent: 'center', fontSize: '70%'}}>Copyright &copy; {(new Date().getFullYear())} Todd Lambert</div>
+<div style={{textAlign: 'center', margin: '0 0 1rem 0', justifyContent: 'center', fontSize: '70%'}}>Copyright &copy; {(new Date().getFullYear())} Dress Up Chef</div>
         </div>
       </footer>
       </ScrollAnimation>

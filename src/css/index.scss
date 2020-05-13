@@ -666,7 +666,7 @@ h1,h2,h3,h4,.h1,.h2,.h3,.h4, #menu, .header .menu-icon:before, input.special, .i
 
 #menu{font-size:1.2rem;}
 
-p{line-height: 1rem; max-width:998px;}
+p{ max-width:998px;}
 // BASE TYPOGRAPHY
 
 textarea,
@@ -705,7 +705,7 @@ padding:0 0;
 .header ul li:first-child{margin-top:10px; }
 .header ul li:last-child{margin-bottom:0;}
 
-.header ul li a{ padding-top:14px; padding-bottom: 0;}
+.header ul li a{ padding-top:18px; padding-bottom: 0;}
 
 .header li a {
   display: block;
@@ -975,7 +975,7 @@ div.column{ padding:1rem 0rem;}
 
 
 
-header .logo{max-height: 58px; float:left; margin-top:3px;}
+header .logo{ float:left; margin-right:120px;}
 
 
 .searchbox{}
@@ -1235,9 +1235,9 @@ div.columns{ padding:1rem;}
 }
 
 @media (min-width: 1024px) {
-#menu{font-size:12px !important;}
+
 .header {height:60px;}
-.header ul li a{border-bottom:0px solid #444 !important;/*  padding-top:15px; padding-bottom: 10px; */}
+.header ul li a{border-bottom:0px solid #444 !important; }
 
 // .header {display: flex; justify-content: space-around;}
 
@@ -1396,7 +1396,7 @@ border-radius: 0px 0px 20px 20px;
 .headroom--pinned header{width:96%; margin:0 auto; border:0px solid red !important; box-shadow: 0px 0px 8px 0px #999; border-radius:10px;}
 
 .headroom--pinned .back-to-top{ top:0; right:25%; background:transparent; display: block !important;}
-.headroom--pinned .back-to-top:after{content: ('Back to top'); font-size: 12px; top:0; position:absolute; height:20px; color:#222; text-shadow: none;}
+.headroom--pinned .back-to-top:after{content: ('top page'); font-size: 10px; top:0; right:30%; position:absolute; color:#222; text-shadow: none;}
 // .headroom--unfixed .back-to-top, .headroom--unfixed .back-to-top:after {display: none;}
 
 .headroom--pinned .themer{top:-23px;}
@@ -1451,7 +1451,7 @@ border-radius: 0px 0px 20px 20px;
 .back-to-top{display: none; position:fixed; bottom:25vh; right:45%; /* transform: translateY(100vh); */ padding:0; height:70px; width:70px; 
 z-index:1;
 color: #fff !important;
-font-size:440%;
+font-size:54px;
 font-weight: bold;
 background-color:#222;
 border-radius: 6px;

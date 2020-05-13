@@ -38,12 +38,12 @@ export const preset = {
     bp => `@media only screen and (min-width: ${bp})`
   ),
   fonts: {
-    body: '"Work Sans", system-ui, sans-serif',
-    heading: '"Work Sans", system-ui, sans-serif',
-    monospace: 'Menlo, monospace',
-    sans: 'Tahoma, Geneva, sans-serif',
-    serif: '"Palatino Linotype", "Book Antiqua", Palatino, serif',
-    mono: '"Courier New", Courier, monospace',
+    // body: '"Work Sans", system-ui, sans-serif',
+    heading: '"Kanit", system-ui, sans-serif',
+    // monospace: 'Menlo, monospace',
+    // sans: 'Tahoma, Geneva, sans-serif',
+    // serif: '"Palatino Linotype", "Book Antiqua", Palatino, serif',
+    // mono: '"Courier New", Courier, monospace',
   },
   fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 96],
   fontWeights: {

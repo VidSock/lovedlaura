@@ -84,32 +84,39 @@ module.exports = {
               textBgColor: 'primary',
             },
             {
-              name: 'Aprons',
-              type: 'collection',
-              handle: 'aprons',
+              name: 'Kids',
+              type: 'product',
+              handle: 'zombie-bucket',
+              textColor: 'black',
+              textBgColor: 'white',
+            },
+            {
+              name: 'Buckets!',
+              type: 'product',
+              handle: 'zombie-bucket',
               textColor: 'black',
               textBgColor: 'white',
             },
           ],
         },
         {
-          name: 'Apparel',
+          name: 'Aprons',
           type: 'collection',
-          handle: 'apparel',
+          handle: 'aprons',
           textColor: 'white',
           textBgColor: 'primary',
         },
         {
-          name: 'Garden',
+          name: 'Photography',
           type: 'collection',
-          handle: 'garden',
+          handle: 'twilightscapes-prints',
           textColor: 'white',
           textBgColor: 'primary',
         },
         {
           name: 'Test',
-          type: 'collection',
-          handle: 'test-collection',
+          type: 'product',
+          handle: 'zombie-bucket',
           textColor: 'black',
           textBgColor: 'white',
         },
@@ -303,7 +310,7 @@ module.exports = {
       basePath: '/shop',
       shopifyLite: true, // default 'false'
       enableWebp: true, // default 'true'
-      imageQuality: '95', // default '95', better to decrease but always check your result images quality
+      imageQuality: '55', // default '95', better to decrease but always check your result images quality
     },
   },
     

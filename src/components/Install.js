@@ -55,10 +55,10 @@ const Install = () => (
 
 
 	
-	<h4 style={{textAlign:'center', fontSize:'140%',}}>Install App</h4>
+	<h4 style={{textAlign:'center', fontSize:'140%',}}>Install Web App - Get 10% off</h4>
 	<br />
 
-  <div style={{fontSize:'100%', textAlign:'center',}}>This website has app functionality, just add it to your home screen to install it.<br /><br /> You never have to go to the website again!</div>
+  <div style={{fontSize:'100%', textAlign:'center',}}>Dress Up Chef has app functionality, just add it to your home screen to install it on your device and receive an additional 10% discount.</div>
   <br />
 	<div style={{fontSize:'80%', textAlign:'center',}}>On your device, locate the browser menu:</div>
 	<br />

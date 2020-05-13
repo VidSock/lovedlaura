@@ -3,6 +3,7 @@ import React from 'react'
 import logo from '../../../img/dressupchef-logo.svg'
 import Headroom from "react-headroom"
 import { ThemeToggler } from 'gatsby-plugin-dark-mode'
+import Install from '../../../components/Install'
 
 import { MdShoppingCart } from 'react-icons/md'
 import { GoArrowUp, GoTelescope } from 'react-icons/go'
@@ -134,7 +135,7 @@ const NavBar = ({ toggleNavbar, isActive }) => (
 	    
     <> 
     <CustomBox>  
-
+<Install />
       <CookieConsent
 	debug={false}
 	location="bottom"
@@ -177,26 +178,27 @@ const NavBar = ({ toggleNavbar, isActive }) => (
 
 <ul id="menu" className="menu">
             
-            
-              
-            {/* <li className="grad" style={{position:'relative',}}>
-            <Link className="navbar-item" to="/shop" style={{paddingRight:'',}}>
-              Shop 
-            </Link>
-            </li> */}
 
 <li className="grad" style={{position:'relative',}}>
             <Link className="navbar-item" to="/shop/collection/aprons" style={{paddingRight:'',}}>
-              Shop
+              Current Stock
             </Link>
 </li>
 
 
 <li className="grad" style={{position:'relative',}}>
-            <Link className="navbar-item" to="/about" style={{paddingRight:'',}}>
+            <Link className="navbar-item" to="/custom" style={{paddingRight:'',}}>
               Custom Orders
             </Link>
             </li>
+
+
+            <li className="grad" style={{position:'relative',}}>
+            <Link className="navbar-item" to="/portfolio" style={{paddingRight:'',}}>
+              About
+            </Link>
+            </li>
+
 
 
 
