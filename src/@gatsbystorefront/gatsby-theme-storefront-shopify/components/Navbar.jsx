@@ -2,21 +2,15 @@ import React from 'react'
 // import SearchBox from '../components/SearchBox'
 import logo from '../../../img/dressupchef-logo.svg'
 import Headroom from "react-headroom"
-
-
-import CookieConsent from "react-cookie-consent"
-
-
 import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 
+import { MdShoppingCart } from 'react-icons/md'
 import { GoArrowUp, GoTelescope } from 'react-icons/go'
 import { GoGear } from 'react-icons/go'
 // import { FaQuestionCircle } from 'react-icons/fa'
 // import { AiFillBank } from 'react-icons/ai'
 import { FaRegAddressCard, FaTelegramPlane, FaSearch, FaTimesCircle } from 'react-icons/fa'
-
-import { MdShoppingCart } from 'react-icons/md'
-
+import CookieConsent from "react-cookie-consent"
 
 // import PopContact from '../components/PopContact'
 // import ScrollAnimation from 'react-animate-on-scroll'
@@ -139,8 +133,9 @@ const NavBar = ({ toggleNavbar, isActive }) => (
 
 	    
     <> 
-    <CustomBox>
-    <CookieConsent
+    <CustomBox>  
+
+      <CookieConsent
 	debug={false}
 	location="bottom"
 	style={{ background: "#222", zIndex:'100000000', padding:'10px 3% 0% 3%', opacity:'.8', }}
@@ -160,19 +155,27 @@ const NavBar = ({ toggleNavbar, isActive }) => (
    <a href="/privacy/" style={{color:'#fff',}}>Do Not Sell My Personal Information</a> | <a href="/privacy/" style={{color:'#fff',}}>Privacy Policy</a>
     </span><br /><br /></div>
     
-</CookieConsent>  
+</CookieConsent> 
+
+
 <Headroom style={{ zIndex: '5', }}>
     <header className="header" style={{position:'relative',}}>
     
-  
+
     
     <Link to="/" className="logolink" title="Logo - Back To Home">
     <img className="logo" src={logo} alt="Dress Up Chef Logo" />
     {/* Loves<br />Laura */}
     </Link>
+   
+   
+
+   
     
-    
-    <ul id="menu" className="menu">
+<input className="menu-btn" type="checkbox" id="menu-btn" />
+<label className="menu-icon" htmlFor="menu-btn"><span className="navicon"></span></label>
+
+<ul id="menu" className="menu">
             
             
               
@@ -183,16 +186,19 @@ const NavBar = ({ toggleNavbar, isActive }) => (
             </li> */}
 
 <li className="grad" style={{position:'relative',}}>
+            <Link className="navbar-item" to="/shop/collection/aprons" style={{paddingRight:'',}}>
+              Shop
+            </Link>
+</li>
+
+
+<li className="grad" style={{position:'relative',}}>
             <Link className="navbar-item" to="/about" style={{paddingRight:'',}}>
-              About Laura 
+              Custom Orders
             </Link>
             </li>
 
-            <li className="grad" style={{position:'relative',}}>
-            <Link className="navbar-item" to="/blog" style={{paddingRight:'',}}>
-              Blog 
-            </Link>
-</li>
+
 
 <li className="grad" style={{position:'relative',}}>
             <Link className="navbar-item" to="/shop/cart" style={{paddingRight:'',}}>
@@ -208,22 +214,13 @@ const NavBar = ({ toggleNavbar, isActive }) => (
 
 
             </ul>
-   
-   
-
-   
-    
-<input className="menu-btn" type="checkbox" id="menu-btn" />
-<label className="menu-icon" htmlFor="menu-btn"><span className="navicon"></span></label>
-
-           
             
             
       
       
    </header>
    
-    <div className="themer"><ThemeToggler>
+    <div className="themer" style={{display:''}}><ThemeToggler>
         {({ theme, toggleTheme }) => (
           <div className="themeSlide grad-vert">
             <input
@@ -257,7 +254,7 @@ const NavBar = ({ toggleNavbar, isActive }) => (
 <div className="container" style={{margin:'0', padding:'0px',}}>
     
 
-    {/* <div className="searchbox" style={{padding:'3px 1rem 0 0',}}><SearchBox searchIndex={data.siteSearchIndex.index} /></div> */}
+    <div className="searchbox" style={{padding:'3px 1rem 0 0',}}></div>
 
 
  </div>
@@ -282,7 +279,6 @@ const NavBar = ({ toggleNavbar, isActive }) => (
 </>
       
       
-
 
 )
 

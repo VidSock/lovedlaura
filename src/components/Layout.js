@@ -12,7 +12,7 @@ import PopContact from '../components/PopContact'
 // import 'typeface-amatic-sc'
 
 import "../css/index.scss"
-// import Consent from '../components/Consent'
+import Consent from '../components/Consent'
 
 // import splash from '../img/hytron-splash.png'
 
@@ -134,7 +134,7 @@ const TemplateWrapper = ({ children }) => {
       <Navbar />
 
       <Install />
-      {/* <Consent /> */}
+      <Consent />
       <PopContact />
   
       <main>{children}</main>

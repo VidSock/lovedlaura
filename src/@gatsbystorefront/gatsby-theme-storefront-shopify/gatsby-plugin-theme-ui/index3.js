@@ -1,12 +1,12 @@
 const colors = {
-  lightPrimary: '#9575cd',
+  lightPrimary: '#0d9ac5',
   darkPrimary: '#311b92',
   darkHighlight: '#dd2c00',
 
   text: '#000',
-  background: '#fff',
+  background: '',
   backgroundFooter: '#f8f8f8',
-  primary: '#333',
+  // primary: '#333',
   secondary: '#77e3da',
   muted: '#e3f9f7',
   grey: '#dddddf',
@@ -39,7 +39,7 @@ export const preset = {
   ),
   fonts: {
     body: '"Work Sans", system-ui, sans-serif',
-    heading: '"Work Sans", system-ui, sans-serif',
+    heading: '"Kanit", system-ui, sans-serif',
     monospace: 'Menlo, monospace',
     sans: 'Tahoma, Geneva, sans-serif',
     serif: '"Palatino Linotype", "Book Antiqua", Palatino, serif',
@@ -86,17 +86,17 @@ export const preset = {
       letterSpacing: '0.1em',
     },
     link: {
-      color: 'primary',
+      // color: 'primary',
       textDecoration: 'none',
       ':hover,:focus,.active': {
-        color: 'primary',
+        // color: 'primary',
       },
     },
     searchLink: {
-      color: 'primary',
+      // color: 'primary',
       textDecoration: 'none',
       ':hover,:focus,.active': {
-        color: 'primary',
+        // color: 'primary',
         textDecoration: 'none',
       },
     },
@@ -113,10 +113,10 @@ export const preset = {
       boxShadow: 'card',
     },
     link: {
-      color: 'primary',
+      // color: 'primary',
       textDecoration: 'none',
       ':hover,:focus,.active': {
-        color: 'primary',
+        // color: 'primary',
       },
     },
     nav: {

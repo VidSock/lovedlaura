@@ -7,7 +7,7 @@ const pathPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix
 
 const {
   NODE_ENV,
-  URL: NETLIFY_SITE_URL = 'https://pick6golf.netlify.com',
+  URL: NETLIFY_SITE_URL = 'https://dressupchef.netlify.app',
   DEPLOY_PRIME_URL: NETLIFY_DEPLOY_URL = NETLIFY_SITE_URL,
   CONTEXT: NETLIFY_ENV = NODE_ENV,
 } = process.env
@@ -34,10 +34,10 @@ module.exports = {
 
 
     gatsbyStorefrontConfig: {
-      storeName: 'Loved by Laura',
-      storeDescription: 'Various knick-knacks and items handmade with love, by Laura',
-      email: 'info@gatsbystorefront.com',
-      company: 'Loved by Laura',
+      storeName: 'Dress Up Chef',
+      storeDescription: 'Custom handmade designer button down chef kitchen aprons',
+      email: 'toddlambert@gmail.com',
+      company: 'Dress Up Chef',
       location: 'Gulfport, MS',
       address: '',
       phone: '+1 (800) 123-1234',
@@ -61,7 +61,7 @@ module.exports = {
         'Line',
         'Viber',
       ],
-      googleAnalyticsId: 'UA-141525658-5',
+      googleAnalyticsId: 'UA-49869143-3',
       //
       // carousel, collection, product
       //
@@ -207,121 +207,6 @@ module.exports = {
                   },
                   {
                     name: 'External link 3',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 2',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 3',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 2',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 3',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 2',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 3',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 2',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 3',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 2',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 3',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 2',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 3',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 2',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 3',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 2',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 3',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 2',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 3',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 2',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 3',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 2',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 3',
-                    type: 'external',
-                    link: 'https://amazon.com',
-                  },
-                  {
-                    name: 'External link 2',
                     type: 'external',
                     link: 'https://amazon.com',
                   },
@@ -490,7 +375,7 @@ module.exports = {
       options: {
         modulePath: `${__dirname}/src/cms/cms.js`,
         enableIdentityWidget: true,
-        htmlTitle: `Pick 6 Golf Content Manager`,
+        htmlTitle: `Dress Up Chef Content Manager`,
       },
     },
 
