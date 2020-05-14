@@ -35,7 +35,7 @@ const CustomBox = styled.div`
 	content: '';
 position: absolute;
 top: 30%;
-right: -58px;
+right: -60px;
 width: 0;
 height: 0;
 	border: 60px solid transparent;
@@ -106,7 +106,7 @@ const Gal1Page = () => {
 
 <div className="container" style={{margin:'1rem 8%',}}>
 <h3 className="" style={{textAlign:'center', fontSize:'250%',}}>
-About Dress Up Chef
+About this site
 </h3>
 </div>
 
@@ -115,11 +115,11 @@ About Dress Up Chef
 <div className="split nowrap" style={{display:'flex', justifyContent:'center', alignItems:'center', flexWrap:'no-wrap', position:'relative',  width:'92%', margin:'0 auto', padding:'1rem', borderRadius:'12px', overflow:'',}}>
 
  <ScrollAnimation animateIn="slideInLeft" animateOut="" animateOnce={true} delay={100} style={{width:'70%', zIndex:'1',}}>    
-<div className="container speech" style={{ width:'95%', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative', boxShadow: '0px 0px 5px 0px black', }}>
+<div className="container speech" style={{ width:'95%', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',  }}>
 
 <p>
-<span className="txtshadow-header" style={{fontSize:'100px', color:'#ccc', position:'absolute', top:'-40px', left:'-10px',}}>&#10077;</span><br />
-<span className="txtshadow-header" style={{fontSize:'100px', color:'#ccc', position:'absolute', bottom:'-50px', right:'-10px',}}>&#10078;</span><br />
+{/* <span className="txtshadow-header" style={{fontSize:'100px', color:'#ccc', position:'absolute', top:'-40px', left:'-10px',}}>&#10077;</span><br />
+<span className="txtshadow-header" style={{fontSize:'100px', color:'#ccc', position:'absolute', bottom:'-50px', right:'-10px',}}>&#10078;</span><br /> */}
 
 Hi, I'm Laura and welcome to Dress Up Chef! This site became an outlet for a hobby that I took up during Hurricane Katrina. I started by creating an apron for myself and then others saw it and wanted one. Once I made one for all of my friends, I figured ya'll might like one too. 
 </p>
@@ -130,7 +130,7 @@ Hi, I'm Laura and welcome to Dress Up Chef! This site became an outlet for a hob
 
  <ScrollAnimation animateIn="slideInRight" animateOut="" animateOnce={true} delay={100} style={{width:'30%', padding:'0', order:'2 !important',  zIndex:'0',}}>    
 
-<div className="imgbox grad" style={{border:'4px solid #fff', position:'relative', margin:'0 0 0 0', borderRadius:'50%', padding:'1rem', overflow:'hidden'}}><Image alt="Co-worker talks about Todd Lambert" filename="mom-icon.jpg" style={{borderColor:'transparent',}} />
+<div className="imgbox grad" style={{border:'4px solid #fff', position:'relative', margin:'0 0 0 0', borderRadius:'50%', padding:'0', overflow:'hidden'}}><Image alt="Co-worker talks about Todd Lambert" filename="mom-icon.jpg" style={{borderColor:'transparent',}} />
 <div className="txtshadow" style={{position:'absolute', left:'0', bottom:'5px', fontSize:'70%', color:'#ddd', textAlign:'center', width:'100%',}}>Laura Lambert</div>
 </div>
 </ScrollAnimation>
@@ -139,7 +139,14 @@ Hi, I'm Laura and welcome to Dress Up Chef! This site became an outlet for a hob
  
  
  
+
+
+
+ {/* <Image alt="Made in USA" filename="made-usa.png" style={{maxWidth:'150px'}} /> */}
  
+ {/* <Image alt="Veteran owned business" filename="vet-owned.png" style={{maxWidth:'150px'}} /> */}
+
+
 
 
 {/* <div className="container">
@@ -182,6 +189,37 @@ spotlight
 </div> */}
 
 </section>
+
+
+<section className='section outer'>
+  
+ 
+   
+   
+  <div className='container content'>
+         
+         
+ 
+ 
+  <h2 className="" style={{textAlign:'center', fontSize:'160%',}}>
+ Handmade in South Mississippi 
+   </h2>
+ 
+ <p>We proudly offer all of our products as completely handmade, unique and one-of-a-kind items that are made with quality and love. </p>
+
+
+ <p>We proudly source all of our materials from second hand stores, right here on the Gulf Coast. Doing our small part in helping to keep materials out of landfills, we hope to help the planet while bringing you a quality product that makes you happy. </p>
+ 
+
+
+ <div style={{width:'150px', margin:'1rem auto', display:''}}>
+   
+   {/* <Image alt="Veteran owned business" filename="vet-owned.png" style={{maxWidth:'150px'}}  /> */}
+ <Image alt="Made in USA" filename="made-usa.png" style={{maxWidth:'150px'}} />
+ </div>
+ 
+  </div>
+  </section>
 
 
 

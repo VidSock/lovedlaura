@@ -180,7 +180,7 @@ const NavBar = ({ toggleNavbar, isActive }) => (
             
 
 <li className="grad" style={{position:'relative',}}>
-            <Link className="navbar-item" to="/shop/collection/aprons" style={{paddingRight:'',}}>
+            <Link className="navbar-item" to="/shop/collection/dress-up-chef" style={{paddingRight:'',}}>
               Current Stock
             </Link>
 </li>
