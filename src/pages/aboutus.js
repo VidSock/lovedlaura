@@ -12,6 +12,10 @@ import ScrollAnimation from 'react-animate-on-scroll'
 // import { FiZoomIn } from 'react-icons/fi'
 // import PopSemi from '../components/PopSemi'
 
+
+
+
+
 import styled from "styled-components"
 const CustomBox = styled.div`
 // .intro:before{
@@ -94,6 +98,9 @@ const Portfolio = graphql`
     }
   }
 `
+
+
+
 
 const Gal1Page = () => {
   const data = useStaticQuery(Portfolio)

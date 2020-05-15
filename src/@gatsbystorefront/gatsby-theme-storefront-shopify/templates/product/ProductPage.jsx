@@ -2,23 +2,23 @@ import React, { useState } from 'react';
 import { Flex, Box, Text } from 'rebass';
 import { Helmet } from 'react-helmet';
 
-import strings from '../../node_modules/@gatsbystorefront/gatsby-theme-storefront-shopify/src/components/strings';
-import substrDescription from '../../node_modules/@gatsbystorefront/gatsby-theme-storefront-shopify/src/utils/substrDescription.js';
-import shortcodeParser from '../../node_modules/@gatsbystorefront/gatsby-theme-storefront-shopify/src/utils/shortcode-parser';
-import ProductCounter from '../../node_modules/@gatsbystorefront/gatsby-theme-storefront-shopify/src/templates/product/ProductCounter';
-import Payments from '../../node_modules/@gatsbystorefront/gatsby-theme-storefront-shopify/src/components/Payments';
-import ShareButtons from '../../node_modules/@gatsbystorefront/gatsby-theme-storefront-shopify/src/components/ShareButtons';
-import Divider from '../../node_modules/@gatsbystorefront/gatsby-theme-storefront-shopify/src/components/Divider';
-import Breadcrumbs from '../../../../node_modules/@gatsbystorefront/gatsby-theme-storefront-shopify/src/components/Breadcrumbs';
-import ProductGalleryCurrentImage from '../../node_modules/@gatsbystorefront/gatsby-theme-storefront-shopify/src/templates/product/ProductGalleryCurrentImage';
-import ProductGalleryThumbnails from '../../node_modules/@gatsbystorefront/gatsby-theme-storefront-shopify/src/templates/product/ProductGalleryThumbnails';
-import { CurrentVariantContextProvider } from '../../node_modules/@gatsbystorefront/gatsby-theme-storefront-shopify/src/templates/product/CurrentVariantContext';
-import { CurrentImageContextProvider } from '../../node_modules/@gatsbystorefront/gatsby-theme-storefront-shopify/src/templates/product/CurrentImageContext';
-import DescriptionBox from '../../node_modules/@gatsbystorefront/gatsby-theme-storefront-shopify/src/templates/product/DescriptionBox';
-import ProductVariantSelector from '../../node_modules/@gatsbystorefront/gatsby-theme-storefront-shopify/src/templates/product/ProductVariantSelector';
-import ProductVariantAddToCart from '../../node_modules/@gatsbystorefront/gatsby-theme-storefront-shopify/src/templates/product/ProductVariantAddToCart';
-import ProductVariantPrice from '../../node_modules/@gatsbystorefront/gatsby-theme-storefront-shopify/src/templates/product/ProductVariantPrice';
-import ProductVariantSku from '../../node_modules/@gatsbystorefront/gatsby-theme-storefront-shopify/src/templates/product/ProductVariantSku';
+import strings from '@gatsbystorefront/gatsby-theme-storefront-shopify/src/components/strings';
+import substrDescription from '@gatsbystorefront/gatsby-theme-storefront-shopify/src/utils/substrDescription.js';
+import shortcodeParser from '@gatsbystorefront/gatsby-theme-storefront-shopify/src/utils/shortcode-parser';
+import ProductCounter from '@gatsbystorefront/gatsby-theme-storefront-shopify/src/components/ProductCounter';
+import Payments from '@gatsbystorefront/gatsby-theme-storefront-shopify/src/components/Payments';
+import ShareButtons from '@gatsbystorefront/gatsby-theme-storefront-shopify/src/components/ShareButtons';
+import Divider from '@gatsbystorefront/gatsby-theme-storefront-shopify/src/components/Divider';
+import Breadcrumbs from '@gatsbystorefront/gatsby-theme-storefront-shopify/src/components/Breadcrumbs';
+import ProductGalleryCurrentImage from '@gatsbystorefront/gatsby-theme-storefront-shopify/src/templates/product/ProductGalleryCurrentImage';
+import ProductGalleryThumbnails from '@gatsbystorefront/gatsby-theme-storefront-shopify/src/templates/product/ProductGalleryThumbnails';
+import { CurrentVariantContextProvider } from '@gatsbystorefront/gatsby-theme-storefront-shopify/src/templates/product/CurrentVariantContext';
+import { CurrentImageContextProvider } from '@gatsbystorefront/gatsby-theme-storefront-shopify/src/templates/product/CurrentImageContext';
+import DescriptionBox from '@gatsbystorefront/gatsby-theme-storefront-shopify/src/templates/product/DescriptionBox';
+import ProductVariantSelector from '@gatsbystorefront/gatsby-theme-storefront-shopify/src/templates/product/ProductVariantSelector';
+import ProductVariantAddToCart from '@gatsbystorefront/gatsby-theme-storefront-shopify/src/templates/product/ProductVariantAddToCart';
+import ProductVariantPrice from '@gatsbystorefront/gatsby-theme-storefront-shopify/src/templates/product/ProductVariantPrice';
+import ProductVariantSku from '@gatsbystorefront/gatsby-theme-storefront-shopify/src/templates/product/ProductVariantSku';
 
 const {
   productQuantityLabel,
@@ -155,14 +155,14 @@ function ProductPage({ data, pageContext, location }) {
             order={3}
           >
             {/* Breadcrumbs block 2 for desktop */}
-            <Box sx={{ display: ['none', 'none', 'block'] }} pt={1}>
+            {/* <Box sx={{ display: ['none', 'none', 'block'] }} pt={1}>
               <Breadcrumbs
                 productTitle={title}
                 collectionTitle={collectionTitle}
                 collectionPath={collectionPath}
                 separator="/"
               />
-            </Box>
+            </Box> */}
             
             <Box>
               <Text as="h1" mb={3} data-title-box>
@@ -270,6 +270,7 @@ function ProductPage({ data, pageContext, location }) {
                 <Text>{shareButtonsLabel}</Text>
               </Box>
               <Box>
+                <h6 style={{textAlign:'center'}}>Share This</h6>
                 <ShareButtons buttons={shareButtons} location={location.href} />
               </Box>
             </Flex>

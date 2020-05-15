@@ -311,6 +311,7 @@ module.exports = {
       shopifyLite: true, // default 'false'
       enableWebp: true, // default 'true'
       imageQuality: '55', // default '95', better to decrease but always check your result images quality
+      // pathToConfigModule: path.join(__dirname, `src/utils/typography`),
     },
   },
     
