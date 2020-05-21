@@ -10,8 +10,7 @@ import Layout from '../components/Layout-noc'
 import { useEffect } from 'react';
 import { navigate } from 'gatsby';
 
-
-
+// import catpage from '../../node_modules/@gatsbystorefront/gatsby-theme-storefront-shopify/src/templates/main/index.jsx'
 
 
 
@@ -26,7 +25,8 @@ const HomePage = ({ data }) => {
 
 
   return (
-    
+
+
     <Layout>
       <HomePageTemplate
         title={frontmatter.title}

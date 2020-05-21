@@ -19,7 +19,7 @@ offerings:
 testimonials:
   - author: aa
     quote: aa
-meta_title: Pick 6 Golf - Pick your best 6 golfers
-meta_description: 'A friendly contest dedicated to picking the best golfers in tournaments. '
+meta_title: Dress Up Chef - Unique homemade dress shirt kitchen aprons
+meta_description: 'Custom designer aprons that are totally unique and handmade in the USA.'
 ---
 

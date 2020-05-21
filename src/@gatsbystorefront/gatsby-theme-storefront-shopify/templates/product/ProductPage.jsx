@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Flex, Box, Text } from 'rebass';
 import { Helmet } from 'react-helmet';
 
-import strings from '@gatsbystorefront/gatsby-theme-storefront-shopify/src/components/strings';
+import strings from '@gatsbystorefront/gatsby-theme-storefront-shopify/src/templates/product/strings';
 import substrDescription from '@gatsbystorefront/gatsby-theme-storefront-shopify/src/utils/substrDescription.js';
 import shortcodeParser from '@gatsbystorefront/gatsby-theme-storefront-shopify/src/utils/shortcode-parser';
 import ProductCounter from '@gatsbystorefront/gatsby-theme-storefront-shopify/src/components/ProductCounter';
@@ -270,7 +270,6 @@ function ProductPage({ data, pageContext, location }) {
                 <Text>{shareButtonsLabel}</Text>
               </Box>
               <Box>
-                <h6 style={{textAlign:'center'}}>Share This</h6>
                 <ShareButtons buttons={shareButtons} location={location.href} />
               </Box>
             </Flex>
